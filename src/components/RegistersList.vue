@@ -6,13 +6,22 @@
     </tr>
     <tr v-for="register in registerList" :key="register.id">
       <td>{{ register.name }}</td>
-      <td>{{ register.birthDate }}</td>
+      <td>{{ register.age }}</td>
     </tr>
   </table>
 </template>
 
 <script>
 import fetchRegisters  from '../services/api';
+
+const serializeAge = (data) => {
+  const year = new Date().getFullYear();
+  return {
+    id: data.id,
+    name: data.name,
+    age: year - parseInt(data.birthDate),
+  }
+};
 
 export default {
   name: 'RegistersList',
@@ -23,7 +32,7 @@ export default {
   },
   async mounted() {
     const registers = await fetchRegisters();
-    this.registerList = registers;
+    this.registerList = registers.map(serializeAge);
   }
 };
 </script>
