@@ -12,6 +12,8 @@
 </template>
 
 <script>
+import fetchRegisters  from '../services/api';
+
 export default {
   name: 'RegistersList',
   data() {
@@ -19,5 +21,9 @@ export default {
       registerList: [],
     };
   },
+  async mounted() {
+    const registers = await fetchRegisters();
+    this.registerList = registers;
+  }
 };
 </script>
