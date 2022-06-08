@@ -26,6 +26,11 @@ const serializeAge = (data) => {
   }
 };
 
+const getRegisterList = async () => {
+  const registers = await fetchRegisters();
+  return registers.map(serializeAge);
+}
+
 export default {
   name: 'RegistersList',
   data() {
@@ -34,12 +39,10 @@ export default {
     };
   },
   async mounted() {
-    const registers = await fetchRegisters();
-    this.registerList = registers.map(serializeAge);
+    this.registerList = await getRegisterList();
   },
   async updated(){
-    const registers = await fetchRegisters();
-    this.registerList = registers.map(serializeAge);
+   this.registerList = await getRegisterList();
   }
 };
 </script>
