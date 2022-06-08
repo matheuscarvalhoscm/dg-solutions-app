@@ -12,21 +12,20 @@
 </template>
   
 <script>
+import { addRegister } from '../services/api';
 
-  import { addRegister } from '../services/api';
-
-  export default {
-    name: 'InputsContainer',
-    data() {
-      return {
-        name: '',
-        birthdate: '',
-      }
-    },
-    methods: {
-      handleSubmit() {
-        addRegister(this.name, this.birthdate);
-      }
+export default {
+  name: 'InputsContainer',
+  data() {
+    return {
+      name: '',
+      birthdate: '',
+    }
+  },
+  methods: {
+    handleSubmit() {
+      addRegister(this.name, this.birthdate);
     }
   }
+}
 </script>

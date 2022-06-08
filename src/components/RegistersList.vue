@@ -12,31 +12,31 @@
 </template>
 
 <script>
-  import { fetchRegisters } from '../services/api';
+import { fetchRegisters } from '../services/api';
 
-  const serializeAge = (data) => {
-    const year = new Date().getFullYear();
+const serializeAge = (data) => {
+  const year = new Date().getFullYear();
+  return {
+    id: data.id,
+    name: data.name,
+    age: year - parseInt(data.birthDate),
+  }
+};
+
+export default {
+  name: 'RegistersList',
+  data() {
     return {
-      id: data.id,
-      name: data.name,
-      age: year - parseInt(data.birthDate),
-    }
-  };
-
-  export default {
-    name: 'RegistersList',
-    data() {
-      return {
-        registerList: [],
-      };
-    },
-    async mounted() {
-      const registers = await fetchRegisters();
-      this.registerList = registers.map(serializeAge);
-    },
-    async updated(){
-      const registers = await fetchRegisters();
-      this.registerList = registers.map(serializeAge);
-    }
-  };
+      registerList: [],
+    };
+  },
+  async mounted() {
+    const registers = await fetchRegisters();
+    this.registerList = registers.map(serializeAge);
+  },
+  async updated(){
+    const registers = await fetchRegisters();
+    this.registerList = registers.map(serializeAge);
+  }
+};
 </script>
