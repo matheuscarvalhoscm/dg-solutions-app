@@ -4,7 +4,7 @@
     <form>
       <label for="name-input">Nome completo</label>
       <input type="text" name="name-input" v-model="name" />
-      <label for="birthdate-input">Data de Nascimento</label>
+      <label for="birthdate-input">Data de nascimento</label>
       <input type="date" name="birthdate-input" v-model="birthdate" />
     </form>
     <button v-on:click="handleSubmit">Registrar</button>
