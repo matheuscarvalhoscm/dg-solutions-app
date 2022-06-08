@@ -5,5 +5,9 @@ const fetchRegisters = async () => {
   return data;
 };
 
-export default fetchRegisters;
+const addRegister = async (name, birthDate) => {
+  axios.post('http://localhost:3003/', { name, birthDate });
+};
+
+export { fetchRegisters, addRegister };
 
