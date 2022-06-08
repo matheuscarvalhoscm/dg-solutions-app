@@ -56,7 +56,7 @@ input {
 }
 
 input:focus {
-  border: 3px solid rgb(76, 76, 168);
+  border: 3px solid rgba(0, 50,111,255);
   outline: none;
 }
 
@@ -65,7 +65,7 @@ input[type="text"] {
 }
 
 button {
-  background-color: rgb(89, 89, 214);
+  background-color: rgb(48,88,148);
   border-radius: 5px;
   border: none;
   color:  rgb(241, 241, 248);
@@ -76,7 +76,7 @@ button {
 }
 
 button:hover {
-  background-color: rgb(15, 15, 114);
+  background-color: rgba(0,50,111,255)
 }
 
 </style>
