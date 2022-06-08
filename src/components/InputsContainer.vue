@@ -7,7 +7,7 @@
       <label for="birthdate-input">Data de nascimento</label>
       <input type="date" name="birthdate-input" v-model="birthdate" />
     </form>
-    <button v-on:click="handleSubmit">Registrar</button>
+    <button @click="handleSubmit">Registrar</button>
   </div>
 </template>
   
