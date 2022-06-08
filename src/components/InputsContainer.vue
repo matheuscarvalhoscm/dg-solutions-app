@@ -7,16 +7,25 @@
       <label for="birthdate-input">Data de Nascimento</label>
       <input type="date" name="birthdate-input" v-model="birthdate" />
     </form>
+    <button v-on:click="handleSubmit">Registrar</button>
   </div>
 </template>
   
 <script>
+
+  import { addRegister } from '../services/api';
+
   export default {
     name: 'InputsContainer',
     data() {
       return {
         name: '',
         birthdate: '',
+      }
+    },
+    methods: {
+      handleSubmit() {
+        addRegister(this.name, this.birthdate);
       }
     }
   }
