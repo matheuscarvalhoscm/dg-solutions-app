@@ -23,7 +23,7 @@ O projeto é dividido em duas parte:
 
 ~~~
 # clone o repositório
-git clone LINK DO REPOSITÓRIO
+git clone https://github.com/matheuscarvalhoscm/dg-solutions-app.git
 
 # acesse a pasta do servidor
 cd dg-solutions-app
