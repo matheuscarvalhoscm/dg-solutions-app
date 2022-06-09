@@ -19,6 +19,15 @@ export default {
 </script>
 
 <style>
+@media screen and (max-width: 900px) {
+  #app {
+    width: 100%;
+    margin: 0px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
 #app {
   font-family: Ubuntu, Roboto, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -26,7 +35,7 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
   display: flex;
-  width: 80%;
+  width: 100%;
   margin: auto;
 }
 </style>
