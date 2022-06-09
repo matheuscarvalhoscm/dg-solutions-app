@@ -49,10 +49,10 @@ export default {
 
 <style scoped>
 .register-table {
-  padding: 1em;
+  padding: 2em;
   border-radius: 10px;
   box-shadow: 1px 1px 4px rgb(199, 199, 199);
-  margin-left: 1em;
+  margin: 1em;
   width: 90%;
   text-align: center;
 }
@@ -61,8 +61,6 @@ table {
   border-radius: 10px;
   text-align: left;
   width: 100%;
-  margin: auto;
-  height: auto;
 }
 
 td,

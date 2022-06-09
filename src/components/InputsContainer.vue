@@ -35,7 +35,8 @@ export default {
   padding: 1em;
   border-radius: 10px;
   box-shadow: 1px 1px 4px rgb(199, 199, 199);
-  margin-left: 2em;
+  margin: 1em;
+  width: 90%;
 }
 
 label,
