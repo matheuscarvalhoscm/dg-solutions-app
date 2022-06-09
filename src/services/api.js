@@ -6,7 +6,12 @@ const fetchRegisters = async () => {
 };
 
 const addRegister = async (name, birthDate) => {
-  axios.post('http://localhost:3003/', { name, birthDate });
+  try {
+    await axios.post('http://localhost:3003/', { name, birthDate });
+  } catch(error) {
+    const { data: message  } = error.response;
+    global.alert(message);
+  }
 };
 
 export { fetchRegisters, addRegister };
