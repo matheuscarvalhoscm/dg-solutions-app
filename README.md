@@ -1,24 +1,50 @@
-# dg-solutions-app
+<a href="https://dgsolutions.com.br/" target="_blank">
+  <img src="https://dgsolutions.com.br/wp-content/uploads/2021/04/logo-dg-solutions-branca.png.webp" alt="Logo da DG Solutions" align="right">
+</a>
 
-## Project setup
-```
+# DG Solutions Challenge
+
+## 🖥 Sobre o projeto
+
+O projeto é um app para inserção e visualização de dados de pessoas, onde são exibidos nome completo e idade da pessoa cadastrada no banco de dados.
+
+---
+
+## 🚀 Executando a aplicação
+
+O projeto é dividido em duas parte:
+
+1. [API para inserção e visualização dos dados.]()
+2. Interface (disponível nesse repositório).
+
+💡️ A interface precisa que o servidor (API) esteja sendo executado para renderizar os dados corretamente.
+
+### **🎲️ Rodando a interface**
+
+~~~
+# clone o repositório
+git clone LINK DO REPOSITÓRIO
+
+# acesse a pasta do servidor
+cd dg-solutions-app
+
+# instale as dependências
 npm install
-```
 
-### Compiles and hot-reloads for development
-```
+# execute a aplicação
 npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+# O servidor inciará na porta:8080 - acesse http://localhost:8080
+~~~
+---
+## 🛠️ Tecnologias
+As seguintes tecnologias foram utilizadas na construção desse projeto:
 
-### Lints and fixes files
-```
-npm run lint
-```
+[![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=fff&color=17366f)](https://vuejs.org/)
+[![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=fff&color=17366f)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+---
+
+## 📧 Contato
+[![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&color=17366F)](https://www.linkedin.com/in/matheuscarvalhoscm/)
+[![](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white&color=17366F)](mailtto:matheuscarvalhoscm@gmail.com)
