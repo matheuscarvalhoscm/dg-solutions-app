@@ -48,3 +48,10 @@ As seguintes tecnologias foram utilizadas na construção desse projeto:
 ## 📧 Contato
 [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&color=17366F)](https://www.linkedin.com/in/matheuscarvalhoscm/)
 [![](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white&color=17366F)](mailtto:matheuscarvalhoscm@gmail.com)
+
+---
+
+## 📚 References
+- [Vue Docs](https://vuejs.org/guide/introduction.html)
+- [Vue Test Utils Guide](https://v1.test-utils.vuejs.org/guides/#getting-started)
+- [Stack Overflow](https://stackoverflow.com/)
