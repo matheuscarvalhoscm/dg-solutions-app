@@ -5,7 +5,7 @@
       <label for="name-input">Nome completo</label>
       <input type="text" name="name-input" v-model="name" />
       <label for="birthdate-input">Data de nascimento</label>
-      <input type="date" name="birthdate-input" v-model="birthdate" />
+      <input type="date" name="birth-date-input" v-model="birthDate" />
     </form>
     <button @click="handleSubmit">Registrar</button>
   </div>
@@ -19,12 +19,12 @@ export default {
   data() {
     return {
       name: '',
-      birthdate: '',
+      birthDate: '',
     }
   },
   methods: {
     handleSubmit() {
-      addRegister(this.name, this.birthdate);
+      addRegister(this.name, this.birthDate);
     }
   }
 }
