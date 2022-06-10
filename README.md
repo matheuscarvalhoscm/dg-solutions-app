@@ -36,7 +36,7 @@ npm install
 # execute a aplicação
 npm run serve
 
-# O servidor inciará na porta:8080 - acesse http://localhost:8080
+# A aplicação inciará na porta:8080 - acesse http://localhost:8080
 ~~~
 ---
 ## 🛠️ Tecnologias
