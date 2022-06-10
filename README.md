@@ -44,6 +44,7 @@ As seguintes tecnologias foram utilizadas na construção desse projeto:
 
 [![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=fff&color=17366f)](https://vuejs.org/)
 [![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=fff&color=17366f)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+[![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white&color=17366f)](https://jestjs.io/pt-BR/)
 
 ---
 
