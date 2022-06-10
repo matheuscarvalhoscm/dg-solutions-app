@@ -32,6 +32,7 @@ export default {
 
 <style scoped>
 .inputs-container {
+  max-height: 19em;
   padding: 1em;
   border-radius: 10px;
   box-shadow: 1px 1px 4px rgb(199, 199, 199);
