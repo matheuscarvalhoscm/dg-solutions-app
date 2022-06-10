@@ -8,6 +8,8 @@
 
 O projeto é um app para inserção e visualização de dados de pessoas, onde são exibidos nome completo e idade da pessoa cadastrada no banco de dados.
 
+<img src="./src/assets/demonstration.gif" alt="Demonstração do app">
+
 ---
 
 ## 🚀 Executando a aplicação
