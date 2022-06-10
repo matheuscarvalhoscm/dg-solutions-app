@@ -1,6 +1,6 @@
 import { shallowMount } from '@vue/test-utils'
 import axios from 'axios';
-import InputsContainer from '../../src/components/InputsContainer.vue'
+import InputsContainer from '../../components/InputsContainer.vue';
 
 const name = 'Steve Jobs';
 const birthDate = '1955-02-24';
