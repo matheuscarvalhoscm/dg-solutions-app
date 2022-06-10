@@ -54,7 +54,7 @@ As seguintes tecnologias foram utilizadas na construção desse projeto:
 
 ---
 
-## 📚 References
+## 📚 Referências
 - [Vue Docs](https://vuejs.org/guide/introduction.html)
 - [Vue Test Utils Guide](https://v1.test-utils.vuejs.org/guides/#getting-started)
 - [Stack Overflow](https://stackoverflow.com/)
