@@ -27,7 +27,7 @@ O projeto é dividido em duas parte:
 # clone o repositório
 git clone https://github.com/matheuscarvalhoscm/dg-solutions-app.git
 
-# acesse a pasta do servidor
+# acesse a pasta do app
 cd dg-solutions-app
 
 # instale as dependências
