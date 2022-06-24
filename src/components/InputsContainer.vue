@@ -3,9 +3,14 @@
     <h1>DG Solutions Challenge</h1>
     <form>
       <label for="name-input">Nome completo</label>
-      <input type="text" name="name-input" v-model="name" />
-      <label for="birthdate-input">Data de nascimento</label>
-      <input type="date" name="birth-date-input" v-model="birthDate" />
+      <input type="text" name="name-input" v-model="name" id="name-input"/>
+      <label for="birth-date-input">Data de nascimento</label>
+      <input type="date" name="birth-date-input" v-model="birthDate" id="birth-date-input"/>
+      <label for="email-input">Email</label>
+      <input type="email" name="email-input" v-model="email" id="email-input" />
+      <label for="tel-input">Telefone</label>
+      <input type="tel" name="tel-input" v-model="tel" id="tel-input" pattern="[0-9]{2}[9]{1}[0-9]{8}" />
+      <!-- atributo pattern: inside the square brackets go the numbers allowed and inside the braces the total numbers allowed -->
     </form>
     <button @click="handleSubmit">Registrar</button>
   </div>
@@ -20,11 +25,13 @@ export default {
     return {
       name: '',
       birthDate: '',
+      email: '',
+      tel: '',
     }
   },
   methods: {
     handleSubmit() {
-      addRegister(this.name, this.birthDate);
+      addRegister(this.name, this.birthDate, this.email, this.tel);
     }
   }
 }

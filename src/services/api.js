@@ -5,9 +5,9 @@ const fetchRegisters = async () => {
   return data;
 };
 
-const addRegister = async (name, birthDate) => {
+const addRegister = async (name, birthDate, email, tel) => {
   try {
-    await axios.post('http://localhost:3003/', { name, birthDate });
+    await axios.post('http://localhost:3003/', { name, birthDate, email, tel });
   } catch(error) {
     const { data: message  } = error.response;
     global.alert(message);
